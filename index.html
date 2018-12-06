@@ -105,38 +105,6 @@
         
           <section id="main">
   
-    <article id="post-关于MySQL" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-    <div class="article-meta">
-      
-	<a href="/2018/12/06/关于MySQL/" class="article-date">
-	  <time datetime="2018-12-06T11:50:27.692Z" itemprop="datePublished">December 6, 2018</time>
-	</a>
-
-       
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学习目标<br>  如何在项目中保存数据-数据库-单词<br> 1、数据库概述<br>    数据库（database）：以特定的结构批量存储业务数据的软件。<br>    网状数据库、层次数据库、关系型数据库、非关系型数据库<br>    关系型数据库逻辑结构（RDBMS）：<br>    服务器（server）-&gt;<br>    数据库（database）-&gt;<br>    表格（table）-&gt;<br>    行（row）-&gt;<br>    列（column）<br> 常见的关系型数据库<br>  SQLite-微型数据库，常用语移动设备<br>  MySQL-开源的中小型数据库，可用于各种操作系统<br>  PostgreSQL-开源中小型数据库<br>  SQL Server-Microsoft开发的中型数据库，只用于Windows系统<br>  Oracle-Oracle公司开发的中大型数据库，可用于各种操作系统<br> 2、MySQL数据库<br>    Oracle分支：MySQL<br>    Martin分支：MartinDB<br>     xampp：是一个服务器套装包含了多款开源的服务器：MySQL、PHP…<br>    MySQL部署结构<br>     服务器端软件：负责存储/维护数据—-银行总机房<br>     客户端软件：负责向服务器发起增删改查的命令—–ATM机<br>     （1）服务器端：C:\xampp\mysql\bin\mysqld.exe 启动文件<br>                    C:\xampp\mysql\data  数据文件—人无法看懂<br>      （2）客户端：<br>                    C:\xampp\mysql\bin\mysql.exe 客户端软件，用来连接服务器端<br>      （3）连接MySQL服务器：<br>          mysql.exe -h127.0.0.1 -P3306 -uroot -p 简写形式: mysql -uroot<br>3.常用MySQL管理命令<br>   quit; 退出服务器的连接<br>   show databases; 显示服务器上当前所有的数据<br>   use数据库名称；进入指定的数据库<br>   show tables；显示当前数据库中所有的数据表<br>   desc 表名称； 描述表中有哪些列<br> 4.MySQL常用的SQL命令<br>    SQL：Structured Query Language,结构化查询语言，用于对关系型数据库服务器中的数据进行增删改查的操作<br>    SQL语言最早是由IBM提出，后提交给了ISO，最终成了数据库行业的标准语言，分为SQL-87，SQL-92，SQL-99等，<br>    当前标准的SQL命令可以被大多数的关系型数据库所支持<br>    SQL命令的两种执行方式<br>     （1）交互模式：客户端输入一行，点击回车，服务器执行一行。适用于临时性的查看数据 mysql -uroot 回车<br>      （2）脚本模式：客户端把要执行的命令写在一个文本文件中，一次性的提交个服务器执行。适用于批量的增删改查<br>          mysql -uroot &lt; 直接把脚本文件拖进去 回车<br>  日常开发中常用的SQL命令<br>       SET NAMES UTF8  set names UTF8;<br>    （1）丢弃指定的数据库，如果存在的话   INSERT INTO：插入<br>        drop database if exists    ;<br>     （2）创建新的数据库<br>       create database …..charset=UTF8  ;<br>    （3）进入刚刚创建的数据库<br>     USE jd;<br>     （4）创建保存数据的表<br>        create table student（<br>         sid INT,<br>    name VARCHAR(8);<br>        sex VARCHAR字符串(1);<br>    score INT<br>     ）;<br>     （5）向数据库中插入数据<br>         INSERT INTO …. VALUES(‘’,’’);  insert into … values(‘’,’’);<br>      (6)修改数据<br>      UPDATE …. SET ….. WHERE;  update…set…where;<br>      (7)删除数据<br>      DELETE FROM … WHERE…; delete from … where…;<br>      (8)查询表中所有的数据<br>        SELECT <em> FROM …..;    select </em> from …;<br>  SQL命令<br>   标准SQL语句分类<br>    DDL:Data Define Language 定义数据机构<br>       CREATE（创建）/DROP（删除）/ALTER<br>    DML:Data Munipulate Language操作数据<br>       INSERT/DELETE/UPDATE<br>    DQL:Data Query Language 查询数据<br>       SELECT<br>    DCL:Data Control Language 控制用户权限<br>       GRANT(授权)/REVOKE(收权)<br> 1.计算机如何存储字符<br>     （1）如何存储英文字符<br>        ASCII：总共有128个 ，对所有的英文字符以及标点符号进行了编码。<br>        Latin-1：总共有256个，兼容ASCII码，同时对欧洲符号进行编码。Mysql就默认使用这用编码。<br>     （2）如何存储中文字符<br>                GB2312   对常用的6千多汉字进行了编码，兼容ASCII编码<br>        GBK      对2万多汉字进行了编码，兼容GB2312<br>        BIG5     台湾繁体字编码，兼容ASCII<br>        Unicode  对世界上主流的语言常用的字符进行了编码，兼容ASCII，不兼容GBK,GC2312，BIG5等系列<br>             具体分为UTF-8，UTF-16，UTF-32等存储方案。<br>      (3)解决MySQL储存中文乱码<br>          sql脚本文件储存的编码为utf-8<br>      客户端连接服务器端使用的编码为utf-8<br>      服务器端创建数据库储存使用的编码为utf-8<br> 2.MySQL中的列类型<br>    创建数据表的时候，指定的列可以存储的数据类型。<br>     CREATE TABLE book（bid 列类型）<br>       (1)数值类型——引号可加可不加<br>       tinyint(微整型)占1个字节(BT)范围-128到127<br>       smallint 小整型 占2个字节 范围-32768到32767<br>       int 整型 占4个字节 范围-2147483648到2147483647<br>       bigint大整型 占8个字节<br>     浮点型<br>       float 单精度浮点型 占4个字节 范围3.4e38，范围比int大的多，可能产生计算误差。<br>       double 双精度浮点学，占8个字节 范围比bigint大的多<br>       decimal(M,D)定点小数，不会产生计算误差，M：总的有效位数，D：小数点后的有效位数<br>       bool  布尔型 只有两个结果 true/1，false/0，true和false不能添加引号，正真在存储数据的时候，会使用tinyint<br>      （2）日起时间类型—–必须加引号<br>          date 日起型 ‘2018-12-31’<br>          time 时间型 ‘14:20:30’<br>          datetime 日起时间型  ‘2013-15-23 12:30:15’<br>      （3）字符串类型<br>          varchar(M)变长字符串 不会产生空间的浪费，操作时间相对较慢，M最大值是65535<br>          char(M)   定长字符串 可能产生空间浪费，造作速度较快，M最大值是255；用于储存一个人的手机号等固定长度字符。<br>          text(M)   大型变长字符串，最多存2G<br> 3.列约束<br>   MySQL可以对插入的数进行特定的验证，只有满足条件才允许插入到数据表中，否则被认为是非法的插入。<br>    （1）主键约束—primary key<br>      声明了主键列上的值不能出现重复，表中查询的记录会按照，主键由小到大排序–加快查找速度；通常主键添加到编号列中。<br>      注意:一个表中只能有一个主键。<br>     （2）唯一约束—unique<br>       声明了唯一约束的列上不能插入重复的值，允许插入NULL，并且能够插入多个NULL。<br>        NULL =空 ：在插入数据中，暂时无法确定要保存的数据 null 注意NULL不能加’’<br>     (3)非空约束—not null<br>           声明了非空约束的列上不能插入null<br>     (4)默认值约束—default<br>         可以使用default关键字声明默认值，有两种方式可以应用默认值<br>       insert into xz values(40,’苹果’,default)<br>       insert into xz(fid,fname) values(20,’华硕’)<br>    （5）检查约束—check<br>        检查约束可以对插入的数据进行检验<br>       create table student(age int check(age&gt;=18 and age&lt;=60));MySQL不支持检查约束，会降低数据的插入速度。<br>    （6）外键约束—foreign key<br>       声明了外键约束的列，取值必须在另一个表的主键列上出现过，列类型要保持一致，取值可以是null。<br>       foreign key(familyId)references:引用xz_lapyop_family(fid)<br> 4.MySQL中的自增列<br>     auto_increment:自动增长，假如一个列声明了自增列，无需手动赋值，直接设置为null，会获取当前最大值，然后加1插入。<br>       注意：<br>     自增列允许自动赋值<br>     只适用于整数型的主键列上<br> 5.简单查询<br>     （1）查询特定的列<br>    示例:查询员工的姓名，工资，生日<br>    select ename,salary,birthday from emp;<br>      (2)查询所有的列<br>        select <em> from emp;<br>      (3)给列起别名<br>      示例：查询所有的员工的姓名和工资，使用汉字的别名显示<br>        select ename as 姓名,salary as 工资 from emp;<br>          注意:as 关键字可以省略 但是要保留空格<br>      (4)只显示不同的记录/合并相同的记录<br>      示例：查询出员工都在哪些部门<br>     select distinct deptId from emp;<br>      (5)在查询时进行计算<br>     示例：计算2</em>3/4-8+10<br>     select 2<em>3/4-8+10;<br>    练习：每个月加500，奖金5000<br>    select ename 名字 ,(salary+500)</em>12+5000 年薪  from emp;<br>      (6)查询结果集的排序 select <em> from … order by…<br>    结果按照部门编号升序排序 asc向上<br>    select </em> from dept order by did asc;<br>    示例：结果按照部门编号降序排序 desc 降序<br>    select <em> from dept order by did desc;<br>     order by 可以按照数值，日期/时间，字符串来排序 默认按照升序排列<br>      (7)条件查询<br>        示例：查询出编号为5的员工所有信息<br>    select </em> from emp where eid=”5”;<br>    select <em> from emp where salary&gt;=5000 and salary&lt;=7000; 工资在5000~7000<br>    select </em> from emp where salary<5000 or="" salary="">7000;    工资小于5000或者大于7000<br>    select <em> from emp where deptId=10 or deptId=30;<br>    select </em> from emp where deptId not in(10,30);<br>    is null/is not null and/or  between…and…/not between..and… in()/not in()<br>    注意：删除，更改，查询都可以结合条件查询<br>      (8)模糊条件查询<br>    示例：查询出员工姓名含有字母e的所有信息  关键字like’%….%’<br>    select <em> from emp where ename like’%S%’;<br>    练习： 查询出名字中以’e’结尾的<br>    select </em> from emp where ename like’%Q’;<br>    练习：查出倒数第二个以e结尾的<br>    select <em> from emp where ename like’%P_’;<br>    sql中提供了两个模糊查询的字符<br>        % 可以匹配任意多个字符  &gt;=0<br>        _ 可以匹配任意一个字符  =1<br>    注意：以上两个匹配不能和=使用，必须使用LIKE关键字<br>      (9)分页查询<br>        假如查询的结果集中有太多的数据 ，一次显示不完，可以分页显示。<br>        需要有两个条件： 当前的页码 每页的数据量 关键字limit<br>        select </em> from emp limit start,conut;<br>        start: 是一个数字，从结果集中的哪一条开始读取，默认的第一条称为0<br>        count: 是一个数字，最多读取的行数<br>        start=（页码-1）<em>count<br>        select </em> from emp limit 0,5; 第一页每一页显示5条记录<br>        select <em> from emp limit 5,5;  第二页<br>        select </em> from emp limit 10,5;  第三页<br>  6.复杂查询—聚合查询/分组查询<br>        示例：查询出所有员工的数量  关键字 count() 最好用count(<em>)<br>        select count(eid) from emp;<br>         函数：功能体，接受若干个数据，返回特定的结果  聚合函数count()所有/sum()求和/avg()平均/max()最大/min()最小<br>        示例：求出所有员工工资总和<br>        select sum(salary) from emp;<br>        示例：所有男员工的平均工资<br>        select avg(salary) from emp where sex=1;<br>        分组查询:只能查询分组条件和聚合函数<br>        示例：查询出每个部门员工最高工资  关键字 group by<br>        select max(salary) from emp  group by deptId;<br>        练习：男女员工的平均工资，最高工资，最低工资<br>        select sex, avg(salary),max(salary),min(salary)from emp group by sex;<br>        year()获取日期中的年份<br>        month()获取日期中的月份<br>        示例：查询1991年出生的员工<br>        select </em> from emp where year(birthday)=’1991’;<br>        示例：查询3月出生的员工<br>        select <em> from emp where month(birthday)=’3’;<br>     复杂查询—子查询<br>        一个SQL语句的查询结果作为另一个SQL语句的查询条件<br>        示例：查询出研发部员工的所有信息<br>        步骤1：查询研发部的部门编号<br>        select did from dept where dname=”研发部”;<br>        步骤2：使用编号查询员工<br>        select </em> from emp where deptId=10;<br>        综合到一起：select <em> from emp where deptId=(select did from dept where dname=”研发部”);<br>        select salary from emp where ename=’小王’;<br>        select </em> from emp where salary&gt;(select salary from emp where ename=’小王’);<br>        select * from emp where year(birthday)=(select year(birthday) from emp where ename=’小王’);<br>     复杂查询—多表查询<br>        示例：查询出所有员工的姓名及其所在的部门名称<br>        !!!select ename,dname from emp,dept;<br>        如何避免笛卡尔积：为多表查询添加条件。<br>        select ename,dname from emp,dept where deptId=did;<br>            上述语法无法查询出没有部门的员工，也不能查询出没有员工的部门。<br>        解决办法:<br>        (1)内连接：inner join…on—和上面的结果一样<br>        select ename,dname from emp inner join dept on deptId=did;<br>        （2）左外链接 left outer join…on 查询结果是左侧表中所有记录，即使右侧表中没有对应的记录<br>        select ename,dname from emp left outer join dept on deptId=did; outer可以省略<br>        （3）又外链接 right outer join…on     outer可以省略<br>        select ename,dname from emp right join dept on deptId=did; 查询结果是右侧表中所有记录，即使左侧表中没有对应的记录<br>        （4）全链接：full join 】显示左右两侧表中的所有记录—-MySQL不支持<br>        MySQL中的全链接： 左外链接union右外链接，合并相同的记录<br>                  左外链接union all右外链接 ，不合并相同的记录<br>   7.项目中如何保存日期，时间<br>        存储的是距离计算机元年（1970-1-1）的毫秒数 存储日期使用bigint<br>            学习一门编程语言的基本步骤<br>                （1）了解背景知识：历史，现状，特点，应用场景<br>                （2）搭建开发环境：编写hello world<br>                （3）变量和常量<br>                （4）数据类型<br>                （5）运算符<br>                （6）逻辑结构<br>                （7）通用小程序<br>                （8）函数和对象<br>                （9）第三方库、框架<br>                （10）实用的项目</5000></p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
     <article id="post-关于软件工程" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -326,18 +294,6 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2018/12/06/关于MySQL/">(no title)</a></h6>
-              <span>December 6, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
               <h6 style="margin: 0;"><a href="/2018/12/03/关于软件工程/">关于软件工程</a></h6>
               <span>December 3, 2018</span>
             </div>
@@ -374,7 +330,7 @@
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
