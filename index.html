@@ -105,6 +105,47 @@
         
           <section id="main">
   
+    <article id="post-JS控制流程" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/12/24/JS控制流程/">JS控制流程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/24/JS控制流程/" class="article-date">
+	  <time datetime="2018-12-24T12:13:03.000Z" itemprop="datePublished">December 24, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line">流程控制</span><br><span class="line">	程序=数据+算法</span><br><span class="line">	程序分为顺序执行、选择执行、循环执行</span><br><span class="line">	（1）if语句   语句1;if(条件表达式)&#123;</span><br><span class="line">		语句2</span><br><span class="line">        &#125;</span><br><span class="line">	语句3; 执行语句1、如果条件表达式为true，执行语句2、</span><br><span class="line">		执行语句3.</span><br><span class="line">	（2）if-else语句</span><br><span class="line">		语句1; if(条件表达式)&#123;</span><br><span class="line">		语句2;	</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">		语句3;</span><br><span class="line">		&#125;</span><br><span class="line">		语句4;</span><br><span class="line">	执行过程：先执行语句1、执行条件表达式，如果结果是true，会执行语句2</span><br><span class="line">		如果是false会执行语句3；</span><br><span class="line">		如果if和else后的大括号中只有一行代码，大括号可以省略</span><br><span class="line">		条件表达式中几个特殊的情况：</span><br><span class="line">		undefined,null,0,&apos;&apos;,NaN在条件表达式中都表示false ！！！！！！！！</span><br><span class="line">	（3）if-else嵌套</span><br><span class="line">		用于判断多种情况</span><br><span class="line">		语句0;</span><br><span class="line">		if(条件表达式1)&#123;</span><br><span class="line">		语句1;</span><br><span class="line">		&#125;else if(条件表达式2)&#123;</span><br><span class="line">		语句2;</span><br><span class="line">		&#125;else...if(条件表达式n)&#123;</span><br><span class="line">		语句n;</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">		语句n+1;   以上所有的条件表达式均为false</span><br><span class="line">		&#125;</span><br><span class="line">	（4）switch-case和if-else类似</span><br><span class="line">		是一种特殊的多项分支语句</span><br><span class="line">		语句0;</span><br><span class="line">		switch(表达式)&#123;</span><br><span class="line">		case 1:    如果表达式的值为1</span><br><span class="line">		语句1....</span><br><span class="line">		break;</span><br><span class="line">		default:</span><br><span class="line">		语句n+1;  以上所有的条件都是false</span><br><span class="line">		&#125;</span><br><span class="line">		说明：在表达式和case中的值比较的时候，使用的是全等(===)</span><br><span class="line">		对比if-else嵌套和switch-case语句</span><br><span class="line">		相同点：两者都可以用于多项分支语句</span><br><span class="line">		不同的：if-else既可以判断相等，又可以判断不等，适用范围比较广</span><br><span class="line">			switch-case只适用于全等的情况，在结构上更为清晰合理，</span><br><span class="line">			执行效率相对较高。</span><br><span class="line">	（6）循环执行</span><br><span class="line">		循环：就是一遍又一遍执行相同或者相似的代码</span><br><span class="line">		循环的两个要素</span><br><span class="line">			循环的条件：控制循环的次数</span><br><span class="line">			循环体：重复执行的相同或者相似代码</span><br><span class="line">		while循环</span><br><span class="line">			while(循环条件)&#123;</span><br><span class="line">			循环体</span><br><span class="line">		&#125;</span><br><span class="line"> 	（7）break关键字</span><br><span class="line">		可以结束任何形式的循环</span><br><span class="line">		练习:使用变量保存 1个数字，循环弹出提示框输入数字，</span><br><span class="line">		如果数字猜大了，弹出提示“big”，如果数字猜小了，</span><br><span class="line">		弹出“small”否则提示“right”，结束循环。</span><br><span class="line">	（8）do-while循环</span><br><span class="line">		do&#123;</span><br><span class="line">		循环体</span><br><span class="line">		&#125;while(循环条件);</span><br><span class="line">		特点：先执行一次循环体，无论条件是否为true</span><br><span class="line">	（9）for循环</span><br><span class="line">		for(初始值;循环的条件;循环的变化)&#123;</span><br><span class="line">		循环体</span><br><span class="line">		&#125;</span><br><span class="line">	（10）break和continue(跳过)</span><br><span class="line">		break：结束循环，后续不会再执行其它的循环</span><br><span class="line">		continue：跳过本次循环，还会继续执行下一次循环</span><br><span class="line">	（11）循环嵌套</span><br><span class="line">		while/do-while/for循环之间可以互相嵌套</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-JS运算符和表达式" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -468,6 +509,18 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2018/12/24/JS控制流程/">JS控制流程</a></h6>
+              <span>December 24, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2018/12/24/JS运算符和表达式/">JS运算符和表达式</a></h6>
               <span>December 24, 2018</span>
             </div>
@@ -522,18 +575,6 @@
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/12/01/hello-world/">Hello World</a></h6>
-              <span>December 1, 2018</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -552,7 +593,7 @@
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">6</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">7</span></li></ul>
     </div>
   </div>
 
