@@ -3,24 +3,24 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>ES6了解 | 小懒猪</title>
+  <title>常见错误及处理方法 | 小懒猪</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="12345678910111213141516171819ES6		ECMAScript6		1.块级作用域		使用let关键字声明变量，只能在块级作用域下访问；块级作用域:&amp;#123; &amp;#125;		if,else,shile,do-while,for里面大括号都是块级作用域		let关键字声明的变量不存在声明提升。		2.箭头函数		是回调函数的另一种写法，和匿名函数不完全一致；		sort">
+  <meta name="description" content="1234567891011121314错误处理		1.常见的错误		SyntaxError  语法错误，错误的使用中文符号，缺少符号...程序不会执行		ReferenceError 引用错误，使用了未声明的变量，会影响后续代码的执行		TypeError 类型错误，错误的使用了数据的类型。例如把变量/对象当函数使用				会影响后续代码的执行。		RangeError 范围错误，参数的使用超出了">
 <meta name="keywords" content="JS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ES6了解">
-<meta property="og:url" content="http://yoursite.com/2018/12/24/ES6了解/index.html">
+<meta property="og:title" content="常见错误及处理方法">
+<meta property="og:url" content="http://yoursite.com/2018/12/24/常见错误及处理方法/index.html">
 <meta property="og:site_name" content="小懒猪">
-<meta property="og:description" content="12345678910111213141516171819ES6		ECMAScript6		1.块级作用域		使用let关键字声明变量，只能在块级作用域下访问；块级作用域:&amp;#123; &amp;#125;		if,else,shile,do-while,for里面大括号都是块级作用域		let关键字声明的变量不存在声明提升。		2.箭头函数		是回调函数的另一种写法，和匿名函数不完全一致；		sort">
+<meta property="og:description" content="1234567891011121314错误处理		1.常见的错误		SyntaxError  语法错误，错误的使用中文符号，缺少符号...程序不会执行		ReferenceError 引用错误，使用了未声明的变量，会影响后续代码的执行		TypeError 类型错误，错误的使用了数据的类型。例如把变量/对象当函数使用				会影响后续代码的执行。		RangeError 范围错误，参数的使用超出了">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-24T12:20:27.096Z">
+<meta property="og:updated_time" content="2018-12-24T12:22:26.703Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ES6了解">
-<meta name="twitter:description" content="12345678910111213141516171819ES6		ECMAScript6		1.块级作用域		使用let关键字声明变量，只能在块级作用域下访问；块级作用域:&amp;#123; &amp;#125;		if,else,shile,do-while,for里面大括号都是块级作用域		let关键字声明的变量不存在声明提升。		2.箭头函数		是回调函数的另一种写法，和匿名函数不完全一致；		sort">
+<meta name="twitter:title" content="常见错误及处理方法">
+<meta name="twitter:description" content="1234567891011121314错误处理		1.常见的错误		SyntaxError  语法错误，错误的使用中文符号，缺少符号...程序不会执行		ReferenceError 引用错误，使用了未声明的变量，会影响后续代码的执行		TypeError 类型错误，错误的使用了数据的类型。例如把变量/对象当函数使用				会影响后续代码的执行。		RangeError 范围错误，参数的使用超出了">
   
     <link rel="alternate" href="/atom.xml" title="小懒猪" type="application/atom+xml">
   
@@ -104,7 +104,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-ES6了解" style="width: 66%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
+          <section id="main" style="float:none;"><article id="post-常见错误及处理方法" style="width: 66%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -112,7 +112,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      ES6了解
+      常见错误及处理方法
     </h1>
   
 
@@ -120,8 +120,8 @@
     
     <div class="article-meta">
       
-	<a href="/2018/12/24/ES6了解/" class="article-date">
-	  <time datetime="2018-12-24T12:19:46.000Z" itemprop="datePublished">December 24, 2018</time>
+	<a href="/2018/12/24/常见错误及处理方法/" class="article-date">
+	  <time datetime="2018-12-24T12:21:56.000Z" itemprop="datePublished">December 24, 2018</time>
 	</a>
 
        
@@ -133,7 +133,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">ES6</span><br><span class="line">		ECMAScript6</span><br><span class="line">		1.块级作用域</span><br><span class="line">		使用let关键字声明变量，只能在块级作用域下访问；块级作用域:&#123; &#125;</span><br><span class="line">		if,else,shile,do-while,for里面大括号都是块级作用域</span><br><span class="line">		let关键字声明的变量不存在声明提升。</span><br><span class="line">		2.箭头函数</span><br><span class="line">		是回调函数的另一种写法，和匿名函数不完全一致；</span><br><span class="line">		sort((a,b)=&gt;&#123;</span><br><span class="line">			return a-b</span><br><span class="line">			&#125;);</span><br><span class="line">		如果函数体中只有一行代码，并且是return形式，可简化为：</span><br><span class="line">			sort((a,b)=&gt;a-b);</span><br><span class="line">		3.函数中的参数</span><br><span class="line">		ES6允许为形参设置默认值，如果没有传递实参，则自动调用形参默认值</span><br><span class="line">		例： function arr(a=2,b=3)&#123;  &#125;</span><br><span class="line">		4.模板字符串</span><br><span class="line">		`在此之间可以写任意形式的代码`</span><br><span class="line">		例：`$&#123;JS语法&#125;`</span><br></pre></td></tr></table></figure>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">错误处理</span><br><span class="line">		1.常见的错误</span><br><span class="line">		SyntaxError  语法错误，错误的使用中文符号，缺少符号...程序不会执行</span><br><span class="line">		ReferenceError 引用错误，使用了未声明的变量，会影响后续代码的执行</span><br><span class="line">		TypeError 类型错误，错误的使用了数据的类型。例如把变量/对象当函数使用</span><br><span class="line">				会影响后续代码的执行。</span><br><span class="line">		RangeError 范围错误，参数的使用超出了范围，会影响后续代码的执行 例如new Array(3.5)</span><br><span class="line">		2.错误处理</span><br><span class="line">		try&#123;</span><br><span class="line">		尝试执行可能出现错误的代码</span><br><span class="line">		&#125;catch(err)&#123;</span><br><span class="line">		捕获出现的错误，把错误信息放到err中</span><br><span class="line">		错误处理的方案</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -172,19 +172,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/12/24/常见错误及处理方法/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          常见错误及处理方法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/12/24/对象/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/12/24/ES6了解/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">对象</div>
+      <div class="article-nav-title">ES6了解</div>
     </a>
   
 </nav>
