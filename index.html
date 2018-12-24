@@ -105,6 +105,47 @@
         
           <section id="main">
   
+    <article id="post-函数" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/12/24/函数/">函数</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/24/函数/" class="article-date">
+	  <time datetime="2018-12-24T12:15:16.000Z" itemprop="datePublished">December 24, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">函数</span><br><span class="line">	parseInt()/parseFloat()/alert()警示框/prompt()提示框/Number()...</span><br><span class="line">	分为系统函数和自定义函数</span><br><span class="line">	函数(function)：有时也被称为方法，是一段预定义好的，		</span><br><span class="line">		可以被反复使用的代码块。</span><br><span class="line">	（1）创建普通函数</span><br><span class="line">		function 函数的名称()&#123;</span><br><span class="line">		函数体---封装反复使用的代码块</span><br><span class="line">		&#125;</span><br><span class="line">	调用：函数名称()</span><br><span class="line">	（2）创建带有参数的函数</span><br><span class="line">		function 函数名称(参数列表)&#123;</span><br><span class="line">		函数体	</span><br><span class="line">		&#125;</span><br><span class="line">	调用：函数名称(参数列表);实参--实际传递的数据</span><br><span class="line">	参数列表：可以是0个或者是多个，之间用逗号隔开；</span><br><span class="line">	创建时的参数为形参（形式上的参数），</span><br><span class="line">	调用时的参数称为实参（实际的参数）</span><br><span class="line">	调用的时候，实参的值会按顺序赋给形参。</span><br><span class="line">	形参本质上就是变量，只能在函数内部使用。</span><br><span class="line">	（3）带有返回值的函数</span><br><span class="line">		function 函数名称(参数列表)&#123;</span><br><span class="line">			函数体</span><br><span class="line">			return 返回值;</span><br><span class="line">		&#125;</span><br><span class="line">	调用：函数名称（参数列表）</span><br><span class="line">	return：表示函数调用后，返回的结果。</span><br><span class="line">	注意：如果函数中没有写 return，默认返回undefined。</span><br><span class="line">	如果函数中没有写return或者return后没有任何值，默认返回undefined</span><br><span class="line">	return函数体重所有的代码都不会被执行</span><br><span class="line"> 11.作用域：就是变量和函数的可访问范围</span><br><span class="line">		全局和局部作用域</span><br><span class="line">		全局：在代码任何地方都能访问</span><br><span class="line">		局部：只能在当前函数的内部访问</span><br><span class="line">	（1）变量声明提升</span><br><span class="line">		js程序执行前，在当前作用域下使用var声明的变量会提升到最前面</span><br><span class="line">		但赋值还是原来的位置。</span><br><span class="line">	（2）函数提升</span><br><span class="line">		函数和变量一样，再js程序执行前，把使用function关键字</span><br><span class="line">		创建的函数提升到最前边。</span><br><span class="line">	注意：如果函数名和变量名一致，变量会覆盖函数（先提升函数，再提升变量）</span><br><span class="line"> 	（3）递归(了解)</span><br><span class="line">	再函数的内部调用自身</span><br><span class="line">		递归在使用的时候需要有结束条件，return</span><br><span class="line"> 12.匿名函数</span><br><span class="line">	没有名称的函数 function()&#123;&#125;</span><br><span class="line">	（1）创建函数-----函数表达式</span><br><span class="line">		var函数名称=function(形参列表)&#123;</span><br><span class="line">		函数体</span><br><span class="line">		return 值;</span><br><span class="line">		&#125;</span><br><span class="line">	调用：函数名称(实参列表)</span><br><span class="line">	对比函数声明和函数表达式的区别</span><br><span class="line">	函数声明存在函数提升，可以在任意位置创建，也可以在任意位置调用</span><br><span class="line">	函数表达式不存在函数提升，存在变量提升，必须先创建再提升</span><br><span class="line">	（2）匿名函数自调用</span><br><span class="line">		(function()&#123;</span><br><span class="line">		函数体；//是一个局部的作用域，无法被外界访问</span><br><span class="line">		&#125;)();</span><br><span class="line">	（3）匿名函数以参数传递---回调函数</span><br><span class="line">		function add(a)&#123;</span><br><span class="line">		形参a就相当于函数名称</span><br><span class="line">		a();表示调用传递的匿名函数	</span><br><span class="line">		&#125;</span><br><span class="line">		add(function()&#123;....&#125;</span><br><span class="line"> 13.全局函数</span><br><span class="line">	parseInt 将数据转为整型</span><br><span class="line">	parseFloat 将数据转为浮点型</span><br><span class="line">	encodeURI：对URL进行编码</span><br><span class="line">	decodeURI:对已经编码的URL进行解码</span><br><span class="line">	isNaN:检测数据是否为NaN，是-true  不是-false</span><br><span class="line">	isFinite:检测数据是否为有限值 是-true 不是-false</span><br><span class="line">	eval：执行字符串中的表达式   eval(&apos;1+2&apos;)返回3</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-JS控制流程" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -509,6 +550,18 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2018/12/24/函数/">函数</a></h6>
+              <span>December 24, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2018/12/24/JS控制流程/">JS控制流程</a></h6>
               <span>December 24, 2018</span>
             </div>
@@ -563,18 +616,6 @@
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/12/01/内涵段子/">内涵段子</a></h6>
-              <span>December 1, 2018</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -593,7 +634,7 @@
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">7</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">8</span></li></ul>
     </div>
   </div>
 
