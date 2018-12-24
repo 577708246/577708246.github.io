@@ -105,6 +105,47 @@
         
           <section id="main">
   
+    <article id="post-JS运算符和表达式" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/12/24/JS运算符和表达式/">JS运算符和表达式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/24/JS运算符和表达式/" class="article-date">
+	  <time datetime="2018-12-24T12:09:08.000Z" itemprop="datePublished">December 24, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">运算符和表达式</span><br><span class="line">	由运算符链接的操作数据，所组成的形式称为表达式</span><br><span class="line">	（1）算数运算符</span><br><span class="line">		+ - * / % ++ --</span><br><span class="line">		% 取余   ++ 自增:在原来的基础上加1    </span><br><span class="line">			-- 自减	：在原来的基础上减1</span><br><span class="line">		console.log(a++)先打印a的值，然后再自增</span><br><span class="line">		console.log(++a)先自增，然后打印a的值</span><br><span class="line">	（2）比较运算符</span><br><span class="line">		&gt;= &lt;= &gt; &lt; == != ===(全等于) !==(全不等)</span><br><span class="line">		返回的结果是布尔型的值</span><br><span class="line"> 		== 只是比较两个数据的值是否相同</span><br><span class="line">		=== 不仅比较数据的值，还比较两个数据的类型是否相同</span><br><span class="line">		3&gt;&apos;10&apos;/ture</span><br><span class="line">		数字和子字符串比较，字符串转换成数值</span><br><span class="line">		&apos;3&apos;&gt;&apos;10&apos;</span><br><span class="line">		两个字符串比较，比较的是Unicode码</span><br><span class="line">		NaN和任何数字比较(&gt; &lt; &lt;= &gt;= == ===)返回false;</span><br><span class="line">		NaN==NaN 返回false</span><br><span class="line">	（3）逻辑运算符</span><br><span class="line">		||或者	&amp;&amp;并且  !非</span><br><span class="line">		 ||：关联的两个条件只需要满足其一，结果就是true否则false</span><br><span class="line">		 &amp;&amp;：关联的两个条件都满足，结果是true，否则false</span><br><span class="line">		！：取反</span><br><span class="line">		逻辑短路</span><br><span class="line">		   || 当第一个条件为ture的时候，就不需要执行第二个条件</span><br><span class="line">		   &amp;&amp; 当第一个条件为false的时候，就不需要执行第二个条件</span><br><span class="line">	（4）位运算符</span><br><span class="line">		将数据转成二进制然后执行运算</span><br><span class="line">		1 10 11 100 101 110 111 1000 1001...</span><br><span class="line">		按位与(&amp;):上下两位都是 1，结果是1，否则是0</span><br><span class="line">		按位或(|):上下两位含有1，结果是1，否则是0</span><br><span class="line">		按位异或(^):上下两位相同是0，不同是1</span><br><span class="line">		按位右移（&gt;&gt;）:删除2进制的最后n位，大概变小到原来的一半</span><br><span class="line">		按位左移（&lt;&lt;）:在2进制的最后添加0，变大到原来的一倍</span><br><span class="line">	（5）辅助运算符</span><br><span class="line">		= += -= *= /= %=</span><br><span class="line">		在原来的基础之上进行加减乘除取余</span><br><span class="line">	（6）三目运算符</span><br><span class="line">		由三个运算数或表达式组成的结构</span><br><span class="line">		条件表达式？   表达式1	：表达式2</span><br><span class="line">		如果条件表达式为true，执行表达式1;</span><br><span class="line">		如果条件表达式为false，执行表达式2;</span><br><span class="line">	（7）两个浏览器端函数</span><br><span class="line">		alert() 弹出警示框</span><br><span class="line">		prompt() 弹出提示框，输入的值是字符串类型</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-JS" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -427,6 +468,18 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2018/12/24/JS运算符和表达式/">JS运算符和表达式</a></h6>
+              <span>December 24, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2018/12/24/JS/">JS</a></h6>
               <span>December 24, 2018</span>
             </div>
@@ -499,7 +552,7 @@
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">6</span></li></ul>
     </div>
   </div>
 
