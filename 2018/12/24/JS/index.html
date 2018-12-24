@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>JS | 小懒猪</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687881.JS概述    （1）发展历史:1995年，JS最早出现在ne">
+<meta name="keywords" content="JS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS">
+<meta property="og:url" content="http://yoursite.com/2018/12/24/JS/index.html">
+<meta property="og:site_name" content="小懒猪">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687881.JS概述    （1）发展历史:1995年，JS最早出现在ne">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-24T12:04:34.616Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS">
+<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687881.JS概述    （1）发展历史:1995年，JS最早出现在ne">
+  
+    <link rel="alternate" href="/atom.xml" title="小懒猪" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/fashion.css">
+  <link rel="stylesheet" href="/css/glyphs.css">
+
+</head>
+</html>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+
+
+<header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="小懒猪" rel="home"> 小懒猪 </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">懒得惊天动地</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首页</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">归档</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">分类</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">标签</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">关于</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-JS" style="width: 66%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      JS
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/24/JS/" class="article-date">
+	  <time datetime="2018-12-24T12:02:45.000Z" itemprop="datePublished">December 24, 2018</time>
+	</a>
+
+       
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">1.JS概述</span><br><span class="line">    （1）发展历史:1995年，JS最早出现在netscape浏览器中</span><br><span class="line">		  2009年，JS遵循CommonJS规范，开始向服务器端发展</span><br><span class="line">    （2）特点：弱类型语言、解释型语言，</span><br><span class="line">		编译一行，执行一行、跨平台、基于对象</span><br><span class="line">    （3）应用领域：网页中的交互效果</span><br><span class="line">		   移动APP</span><br><span class="line">		   web服务器</span><br><span class="line"> 2.搭建JS的开发环境</span><br><span class="line">         浏览器中，内置的JS解释器</span><br><span class="line"> 	 服务器中，需要安装NODEJS</span><br><span class="line">   运行方式</span><br><span class="line">     （1）NODEJS下</span><br><span class="line">		创建js文件  node c:/xampp/...02.js</span><br><span class="line">      (2)浏览器下</span><br><span class="line">		创建js文件</span><br><span class="line">		创建html文件 &lt;script src=&quot;02.js&quot;&gt;&lt;/script&gt;	</span><br><span class="line">		双击打开html</span><br><span class="line"> 3.JS语法规范</span><br><span class="line">     （1）区分大小写</span><br><span class="line">	（2）每行结束的分号可加可不加，但是习惯上都加</span><br><span class="line">	（3）分为单行注释// 多行注释/*.....*/</span><br><span class="line"> 4.变量</span><br><span class="line">	变量就是用于存储数据的容器</span><br><span class="line">	（1）声明变量：使用关键字var var x=1</span><br><span class="line">	（2）变量的命名规则：可以使用字母、$符号、_、不能以数字开头，</span><br><span class="line">		不能使用关键字和保留字作为变量名。 </span><br><span class="line">		userName驼峰命名  user_name 下划线命名</span><br><span class="line">	（3）一次声明多个变量</span><br><span class="line">		var chinese=90,math=80; 多个变量之间用逗号隔开。</span><br><span class="line">	（4）声明变量未赋值</span><br><span class="line">		var a; a的值未undefined(未定义)</span><br><span class="line"> 5.常量</span><br><span class="line">       一旦声明就不能再重新赋值</span><br><span class="line">	例如：圆周率、春节、中秋节.... 关键字 const</span><br><span class="line">	const pi=3.14;</span><br><span class="line"> 6.数据类型</span><br><span class="line">	分为原始类型和引用类型</span><br><span class="line">	原始类型分为数值型、字符串型、布尔型、未定义型（undefied）、null</span><br><span class="line">	（1）数值型：</span><br><span class="line">		分为整型和浮点型</span><br><span class="line">		整型在内存中占4个字节，浮点型占8个字节</span><br><span class="line">		整数分为8进制（0开头）、10进制、16进制（0x开头）</span><br><span class="line">		浮点型分为指数型和普通</span><br><span class="line">	（2）字符串类型</span><br><span class="line">		数据被引号所包含就是字符串类型，不区分单双引号</span><br><span class="line">		查看某一个字符的Unicode编码</span><br><span class="line">			&apos;a&apos;charCodeAt()</span><br><span class="line">	（3）布尔型</span><br><span class="line">		在程序中表示真(true)或者假(false)</span><br><span class="line">		常用于一些是否的结果</span><br><span class="line">	（4）未定义型</span><br><span class="line">		声明了一个变量未赋值，结果是undefined</span><br><span class="line">	（5）空null</span><br><span class="line">		用于引用数据类型</span><br><span class="line">		检测数据类型:</span><br><span class="line">			typeof()</span><br><span class="line">		number/string/boolean/undefined/object 对应以上(1)-(5)</span><br><span class="line"> 7.数据类型的转换</span><br><span class="line">	（1）隐式转换</span><br><span class="line">		数字+字符串：数字转换成字符串  1=&apos;a&apos;:&apos;1a&apos;</span><br><span class="line">		数字+布尔型：布尔型转换成数字 true=1 false=0</span><br><span class="line">			1+true=2 1+false=1</span><br><span class="line">		字符串+布尔型：布尔型转换成字符串 </span><br><span class="line">			&apos;a&apos;+true=&apos;atrue&apos;</span><br><span class="line">		null的加法：1+null=1 null-&gt;0</span><br><span class="line">			    true+null=1 ture-&gt;0</span><br><span class="line">			    &apos;a&apos;+null=&apos;anull&apos; null-&gt;&apos;null&apos;</span><br><span class="line">	   -*/执行运算</span><br><span class="line">		尝试将符号两端的数据转成数值型（自动调用Number转换），</span><br><span class="line">			如果无法转换，返回NaNa(Not a Number)</span><br><span class="line">		总结：加号的作用</span><br><span class="line">			执行加法运算，执行字符串拼接。</span><br><span class="line">	（2）强制转换</span><br><span class="line">		将数据转成数值型</span><br><span class="line">			Number()将任意的数据转换成数值型，</span><br><span class="line">				如果被转换的字符串中含有非数字，则返回NaN，</span><br><span class="line">				布尔型会转换成数值型。</span><br><span class="line">		将数据转换成整型</span><br><span class="line">			parseInt()</span><br><span class="line">			parseInt(&apos;1&apos;)=1</span><br><span class="line">			查看数据的开头是否为数字，遇到非数字则返回前面的数字。</span><br><span class="line">			如果开头是非数字，则返回NaN。</span><br><span class="line">		将数据转成浮点型</span><br><span class="line">			parseFloat()</span><br><span class="line">			parseFloat(1.5a)=1.5</span><br><span class="line">		将数据转换成字符串</span><br><span class="line">			toString(): var pi=3.14  var res=pi.toString()</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/12/06/关于MySQL/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">关于MySQL</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+      <ol class="nav">无</ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2018 小懒猪 All Rights Reserved.
+        
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+    
+</script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>

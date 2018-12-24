@@ -105,6 +105,48 @@
         
           <section id="main">
   
+    <article id="post-JS" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/12/24/JS/">JS</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/24/JS/" class="article-date">
+	  <time datetime="2018-12-24T12:02:45.000Z" itemprop="datePublished">December 24, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">1.JS概述</span><br><span class="line">    （1）发展历史:1995年，JS最早出现在netscape浏览器中</span><br><span class="line">		  2009年，JS遵循CommonJS规范，开始向服务器端发展</span><br><span class="line">    （2）特点：弱类型语言、解释型语言，</span><br><span class="line">		编译一行，执行一行、跨平台、基于对象</span><br><span class="line">    （3）应用领域：网页中的交互效果</span><br><span class="line">		   移动APP</span><br><span class="line">		   web服务器</span><br><span class="line"> 2.搭建JS的开发环境</span><br><span class="line">         浏览器中，内置的JS解释器</span><br><span class="line"> 	 服务器中，需要安装NODEJS</span><br><span class="line">   运行方式</span><br><span class="line">     （1）NODEJS下</span><br><span class="line">		创建js文件  node c:/xampp/...02.js</span><br><span class="line">      (2)浏览器下</span><br><span class="line">		创建js文件</span><br><span class="line">		创建html文件 &lt;script src=&quot;02.js&quot;&gt;&lt;/script&gt;	</span><br><span class="line">		双击打开html</span><br><span class="line"> 3.JS语法规范</span><br><span class="line">     （1）区分大小写</span><br><span class="line">	（2）每行结束的分号可加可不加，但是习惯上都加</span><br><span class="line">	（3）分为单行注释// 多行注释/*.....*/</span><br><span class="line"> 4.变量</span><br><span class="line">	变量就是用于存储数据的容器</span><br><span class="line">	（1）声明变量：使用关键字var var x=1</span><br><span class="line">	（2）变量的命名规则：可以使用字母、$符号、_、不能以数字开头，</span><br><span class="line">		不能使用关键字和保留字作为变量名。 </span><br><span class="line">		userName驼峰命名  user_name 下划线命名</span><br><span class="line">	（3）一次声明多个变量</span><br><span class="line">		var chinese=90,math=80; 多个变量之间用逗号隔开。</span><br><span class="line">	（4）声明变量未赋值</span><br><span class="line">		var a; a的值未undefined(未定义)</span><br><span class="line"> 5.常量</span><br><span class="line">       一旦声明就不能再重新赋值</span><br><span class="line">	例如：圆周率、春节、中秋节.... 关键字 const</span><br><span class="line">	const pi=3.14;</span><br><span class="line"> 6.数据类型</span><br><span class="line">	分为原始类型和引用类型</span><br><span class="line">	原始类型分为数值型、字符串型、布尔型、未定义型（undefied）、null</span><br><span class="line">	（1）数值型：</span><br><span class="line">		分为整型和浮点型</span><br><span class="line">		整型在内存中占4个字节，浮点型占8个字节</span><br><span class="line">		整数分为8进制（0开头）、10进制、16进制（0x开头）</span><br><span class="line">		浮点型分为指数型和普通</span><br><span class="line">	（2）字符串类型</span><br><span class="line">		数据被引号所包含就是字符串类型，不区分单双引号</span><br><span class="line">		查看某一个字符的Unicode编码</span><br><span class="line">			&apos;a&apos;charCodeAt()</span><br><span class="line">	（3）布尔型</span><br><span class="line">		在程序中表示真(true)或者假(false)</span><br><span class="line">		常用于一些是否的结果</span><br><span class="line">	（4）未定义型</span><br><span class="line">		声明了一个变量未赋值，结果是undefined</span><br><span class="line">	（5）空null</span><br><span class="line">		用于引用数据类型</span><br><span class="line">		检测数据类型:</span><br><span class="line">			typeof()</span><br><span class="line">		number/string/boolean/undefined/object 对应以上(1)-(5)</span><br><span class="line"> 7.数据类型的转换</span><br><span class="line">	（1）隐式转换</span><br><span class="line">		数字+字符串：数字转换成字符串  1=&apos;a&apos;:&apos;1a&apos;</span><br><span class="line">		数字+布尔型：布尔型转换成数字 true=1 false=0</span><br><span class="line">			1+true=2 1+false=1</span><br><span class="line">		字符串+布尔型：布尔型转换成字符串 </span><br><span class="line">			&apos;a&apos;+true=&apos;atrue&apos;</span><br><span class="line">		null的加法：1+null=1 null-&gt;0</span><br><span class="line">			    true+null=1 ture-&gt;0</span><br><span class="line">			    &apos;a&apos;+null=&apos;anull&apos; null-&gt;&apos;null&apos;</span><br><span class="line">	   -*/执行运算</span><br><span class="line">		尝试将符号两端的数据转成数值型（自动调用Number转换），</span><br><span class="line">			如果无法转换，返回NaNa(Not a Number)</span><br><span class="line">		总结：加号的作用</span><br><span class="line">			执行加法运算，执行字符串拼接。</span><br><span class="line">	（2）强制转换</span><br><span class="line">		将数据转成数值型</span><br><span class="line">			Number()将任意的数据转换成数值型，</span><br><span class="line">				如果被转换的字符串中含有非数字，则返回NaN，</span><br><span class="line">				布尔型会转换成数值型。</span><br><span class="line">		将数据转换成整型</span><br><span class="line">			parseInt()</span><br><span class="line">			parseInt(&apos;1&apos;)=1</span><br><span class="line">			查看数据的开头是否为数字，遇到非数字则返回前面的数字。</span><br><span class="line">			如果开头是非数字，则返回NaN。</span><br><span class="line">		将数据转成浮点型</span><br><span class="line">			parseFloat()</span><br><span class="line">			parseFloat(1.5a)=1.5</span><br><span class="line">		将数据转换成字符串</span><br><span class="line">			toString(): var pi=3.14  var res=pi.toString()</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-关于MySQL" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -230,6 +272,56 @@
 <!-- Table of Contents -->
 
   
+    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/12/01/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/12/01/hello-world/" class="article-date">
+	  <time datetime="2018-12-01T05:34:28.342Z" itemprop="datePublished">December 1, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
 
 
 </section>
@@ -335,6 +427,18 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2018/12/24/JS/">JS</a></h6>
+              <span>December 24, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2018/12/06/关于MySQL/">关于MySQL</a></h6>
               <span>December 6, 2018</span>
             </div>
@@ -365,6 +469,18 @@
 
           </li>
         
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/12/01/hello-world/">Hello World</a></h6>
+              <span>December 1, 2018</span>
+            </div>
+
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -383,7 +499,7 @@
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
